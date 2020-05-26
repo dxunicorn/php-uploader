@@ -1,6 +1,6 @@
 <?
 
-require "../src/App.php";
+require "src/App.php";
 
 $app = new App;
 

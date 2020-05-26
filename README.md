@@ -10,8 +10,8 @@ Simple web-based file uploader.
 - easy to install and configure
 
 ### Minimum installation:
-- put the files from this repository into a work folder on your php server
-- set the "web" folder as a public folder
+- put the files from "web" folder into a work folder on your php server
+- check file permissions for "upload" folder
 - done
 
 ### Configuration:

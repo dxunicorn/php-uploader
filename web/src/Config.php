@@ -2,7 +2,7 @@
 
 class Config
 {
-	const INI_PATH = '../config.ini';
+	const INI_PATH = 'config.ini';
 	
 	protected static $data = null;
 	
