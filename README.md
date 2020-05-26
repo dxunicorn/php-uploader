@@ -1,7 +1,7 @@
 # PHP-Uploader
 Simple web-based file uploader.
 
-##### Key features:
+### Key features:
 - drag-and-drop support
 - files queue
 - displaying upload progress
@@ -9,12 +9,12 @@ Simple web-based file uploader.
 - extensions blacklist
 - easy to install and configure
 
-##### Minimum installation:
+### Minimum installation:
 - put the files from this repository into a work folder on your php server
 - set the "web" folder as a public folder
 - done
 
-##### Configuration:
+### Configuration:
 You can edit the config.ini file:
 - ***name*** 
 Site name (will be displayed in the page title)
