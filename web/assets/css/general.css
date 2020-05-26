@@ -144,10 +144,7 @@ a, p {
 		rgba(255, 255, 255, .15) 75%,
 		transparent 75%, transparent
 	);
-	animation-name: progress-sliding;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	animation: progress-sliding 3s infinite linear;
 	transition: width 300ms;
 }
 
@@ -155,11 +152,6 @@ a, p {
 	width: 100%;
 	background-color: #676767;
 	transition: none;
-}
-
-@keyframes progress-sliding {
-	0% {background-position: 0 0;}
-	100% {background-position: 60px 0;}
 }
 
 .card__status {
@@ -197,4 +189,9 @@ a, p {
 	text-align: center;
 	font-size: 12pt;
 	margin-top: 2em;
+}
+
+@keyframes progress-sliding {
+	0% {background-position: 0 0;}
+	100% {background-position: 60px 0;}
 }

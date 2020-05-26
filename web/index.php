@@ -91,7 +91,9 @@ $app = new App;
 			</div>
 		</script>
 		<script>
-			var app = new App(<?=$app->getJsParams()?>);
+			$(document).ready(function(){
+				new App(<?=$app->getJsParams()?>);
+			});
 		</script>
 	</body>
 </html>

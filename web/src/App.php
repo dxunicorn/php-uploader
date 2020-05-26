@@ -68,6 +68,6 @@ class App
 	}
 	
 	private function classLoader($class){
-		require __DIR__.'\\'.$class.'.php';
+		require __DIR__.'/'.$class.'.php';
 	}
 }

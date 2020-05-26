@@ -130,7 +130,7 @@ function App( config ){
 			},
 			urlToClipboard: function(){
 				if( !('clipboard' in navigator) ) return;
-				navigator.clipboard.writeText(this.url);
+				navigator.clipboard.writeText(window.location.href + this.url);
 			},
         },
     });
