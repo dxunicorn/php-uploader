@@ -38,6 +38,7 @@ class App
 		$filename = basename($_FILES['file']['name']);
 		$filename = $this->checkRestrictedExtension($filename);
 		$filename = $this->checkFileExist( $filename, $uploadDir );
+		$filename = ltrim( $filename, '.' );
 		$target = $uploadDir.$filename;
 		
 		if( !move_uploaded_file($source, $target) ) throw new Exception('File save error');
@@ -46,9 +47,9 @@ class App
 	}
 	
 	private function checkRestrictedExtension( $filename ){
-		$list = explode(',', Config::get('ext_blacklist'));
+		$list = explode(',', Config::get('blacklist'));
 		$extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
-		if( in_array($extension, $list) ) $filename .= '.txt';
+		if( in_array($extension, $list) ) $filename .= '.'.Config::get('safe_extension');
 		return $filename;
 	}
 	
