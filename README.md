@@ -9,7 +9,11 @@ Simple web-based file uploader.
 - extensions blacklist
 - easy to install and configure
 
-### Minimum installation:
+### System Requirements
+- PHP version 5.2.0 and higher
+- PHP-JSON extension
+
+### Installation:
 - put the files from "web" folder into a work folder on your php server
 - check file permissions for "upload" folder
 - done
